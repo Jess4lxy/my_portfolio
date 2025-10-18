@@ -1,9 +1,12 @@
 import Image from "next/image";
 import TypingAnimation from "./components/TypingAnimation";
+import Header from "./components/Header";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 relative overflow-hidden">
+      <Header />
+      
       {/* background decorative elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
@@ -14,7 +17,7 @@ export default function Home() {
       </div>
 
       {/* main content */}
-      <div className="relative z-10 container mx-auto px-6 py-12 lg:py-20">
+      <div className="relative z-10 container mx-auto px-6 pt-24 pb-12 lg:pt-32 lg:pb-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
           
           {/* left section - introduction */}
